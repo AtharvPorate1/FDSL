@@ -80,7 +80,7 @@ list.append(nrow)
 list.append(ncol)
 
 
-print("\nSum Of the matrix is : ")
+print("\n\nSum Of the matrix is : ")
 
 
 for sum in list:
@@ -119,7 +119,7 @@ def multiply(m1,m2):
         mul.append(r)
     return mul
 
-print('\n Multiplication of matrices is :')
+print('\n\nMultiplication of matrices is :')
 for pro in multiply(m1,m2):
     print()
     for z in pro:    
@@ -148,7 +148,7 @@ def transpose(matrix):
     return matrix_T
 
 
-print("\nTranspose of matrix 1 : ")
+print("\n\nTranspose of matrix 1 : ")
 
 for t1 in transpose(m1):
     print()
@@ -156,7 +156,7 @@ for t1 in transpose(m1):
         print( trans1,end="  ")
 
 
-print("\nTranspose of matrix 2 : ")
+print("\n\nTranspose of matrix 2 : ")
 
 for t2 in transpose(m2):
     print()

@@ -1,10 +1,10 @@
-from itertools import count
+
 
 
 def longestWord(string):
     longest = ""
-    list = string.split(' ') 
-    for i in list:
+    a = string.split(' ') 
+    for i in a:
         if len(i) > len(longest):
             longest = i
     return longest
@@ -19,32 +19,35 @@ def freq(k,string):
     return count
 
 def isPalindrome(string):
-    list = string.split(' ')
+    a = string.split(' ')
     reversedList = list[::-1]
-    if len(list)>1:
-        if reversedList == list:
+    if len(a)>1:
+        if reversedList == a:
             print("This string is a palindrome")
         else:
             print("This is not a palindrome")
     
     else:
-        reversedString = string.reverse()
-        if string == reversedString:
-            print("This is a Palindrome")
+        splittedList = list(string)
+        reversedString = list(string)[::-1]
+        
+        if splittedList == reversedString:
+            print(f"{string} is a Palindrome")
         else:
-            print("This is not a palndrome")
+            print(f"{string} is not a palindrome")
         
     
 def occurence(string):
     count = 0
     word = ""
-    list = string.split(' ')
-    for i in list:
-        for k in list:
+    a = string.split(' ')
+    for i in a:
+        for k in a:
             if i == k:
                 count += 1
                 word = i
         print(f"Occurence of {word} is {count}")
+        count = 0
     
     
 

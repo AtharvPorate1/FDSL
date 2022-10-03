@@ -27,6 +27,16 @@ matrix = createMatrix()
 
 m1 = matrix[0]
 m2 = matrix[1]
+print(m1)
+print(m2)
+
+
+
+
+
+
+
+
 
 def display1(m1):
     print("Matrix 1 is : ")
@@ -48,6 +58,13 @@ def display2(m2):
 
 display2(m2)
 c=[]
+
+
+
+
+
+
+#SUM
 
 for i in range(len(m1)):
   if (len(m1) != len(m2)) or (len(m1[i]) != len(m2[i])):
@@ -71,17 +88,29 @@ for sum in list:
     for p in sum:    
         print( p,end="  ")
 
-def multiply(m1,m2):
-    result = [[0,0],[0,0]]
 
-    for q in range(len(m1)):
+
+
+
+
+
+
+
+def multiply(m1,m2):
+    if len(m1[1]) != len(m2[0]):
+        print("multiplication is not possible")
+    else:    
     
+        result = [[0,0],[0,0]]
+
+        for q in range(len(m1)):
         
-        for w in range(len(m2[0])):
-    
             
-            for e in range(len(m2)):
-                result[q][w] += m1[q][e] * m2[e][w]
+            for w in range(len(m2[0])):
+        
+                
+                for e in range(len(m2)):
+                    result[q][w] += m1[q][e] * m2[e][w]
 
 
     mul = []
@@ -95,6 +124,13 @@ for pro in multiply(m1,m2):
     print()
     for z in pro:    
         print( z,end="  ")
+
+
+
+
+
+
+
 
 
 
